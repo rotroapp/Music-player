@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>My website</title>
+    </head>
+    <body>
+         <h1>Hello</h1>
+         <input type="checkbox">
+         <button style=" color:red ;" >Click me</button>
+        
+        <ul>
+            <li class="list">
+            <a href="www.google.com">Google</a>
+            </li>
+            <li class="list">Second</li>
+            <li class="list">Third</li>
+        </ul>
+<!-- 
+        <script src="index1.js" charset="utf-8"></script> -->
+    </body>
+    
+</html>
+
+
+<!-- console.log("Welcome to JS")
+// intialize var
+
+let songIndex = 0;
+let audioElement = new Audio('songs/0.mp3');
+
+let masterPlay = document.getElementById('masterPlay');
+let songIteam = Array.from(document.getElementsByClassName('SongIteam'));
+
+let progressbar = document.getElementById('progressbar');
+let gif = document.getElementById('gif');
+
+let songs = [
+
+    {songName: "DROP IT", filePath: "songs/0.mp3", coverPath: "image1.jpg"},
+    {songName: "Best Time", filePath: "songs/1.mp3", coverPath: "image1.jpg"},
+    {songName: "Weekend", filePath: "songs/2.mp3", coverPath: "image1.jpg"},
+    {songName: "Euphoria", filePath: "songs/3.mp3", coverPath: "image1.jpg"},
+    {songName: "Soft-Beat", filePath: "songs/4.mp3", coverPath: "image1.jpg"},
+    {songName: "Aspire", filePath: "songs/5.mp3", coverPath: "image1.jpg"}
+
+]
+    
+songIteam.forEach((element, i)=>{
+
+    console.log(element, i);
+    // element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("SongName")[0].innerText=songs[i].songName;
+})
+
+masterPlay.addEventListener('click', ()=> {
+    if(audioElement.paused || audioElement.currentTime<=0)
+    {
+        audioElement.play();
+        masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
+        gif.style.opacity = 1;
+    }
+    else
+    {
+        audioElement.pause();
+        masterPlay.classList.remove('fa-pause-circle');
+        masterPlay.classList.add('fa-play-circle');
+        gif.style.opacity = 0;
+    }
+})
+
+audioElement.addEventListener('timeupdate', ()=>{
+    //update seekbar
+    progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
+    
+    progressbar.value = progress;
+})
+
+progressbar.addEventListener('change', ()=>
+{
+    audioElement.currentTime = (progressbar.value * audioElement.duration)/100;
+
+})
+
+const makeAllPlays = ()=>{
+    Array.from(document.getElementsByClassName('SongIteamPlay')).forEach((element)=>{
+    element.classList.remove('fa-pause-circle');
+    element.classList.add('fa-play-circle');
+
+    })
+}
+
+Array.from(document.getElementsByClassName('SongIteamPlay')).forEach((element)=>{
+
+   element.addEventListener('click', (e)=>{
+   makeAllPlays();
+   index = parseInt(e.target.id);
+   e.target.classList.remove('fa-play-circle');
+   e.target.classList.add('fa-pause-circle');   
+   audioElement.src = `songs/${index}.mp3`;
+   audioElement.currentTime = 0;
+
+    audioElement.play();
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+    gif.style.opacity = 1;
+
+
+   
+   })
+})
+ -->

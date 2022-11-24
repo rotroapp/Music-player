@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&display=swap');
+
+body{
+    background-color:rgb(206, 212, 219);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Caveat', cursive;
+    background-color: rgb(206, 212, 219);
+    margin-bottom: 10px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+   
+    color: white;
+    
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+       padding: 5px;
+       width: 50px;
+}
+
+.brand {
+   display:inline-flex;
+   align-items: center;
+   font-size: 1.3rem;
+   font-weight: bolder;
+
+}
+.container{
+    min-height: 62vh;
+    background-color: rgb(211, 205, 205);
+    color: rgb(255, 254, 254);
+    font-family: 'ABeeZee', sans-serif;
+    
+    margin: auto;
+    padding: 18px;
+    width: 50%;
+    border-radius: 8px;
+    background-image: url('terx.jpg');
+
+}
+.bottom{
+
+     position:sticky;
+     height: 100px;
+     color: azure;
+     background-color: rgb(29, 30, 31);
+     bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.icons i{
+    cursor: pointer;
+}
+#progressbar{
+    width: 80vw;
+    scrollbar-color: black;
+    color-scheme: black;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.SongIteam{
+   height: 40px;
+   display: flex;
+   background-color:rgb(18, 18, 19);
+   color: white;
+   width: 55%;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+   border-radius: 25px;
+   margin-bottom: 10px;
+}
+
+.SongIteam img{
+    width: 43px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.timeStamp{
+    padding-right: 5px;
+
+}
+
+.SongInfo{
+    position: absolute;
+    left: 6vw;
+    font-size: smaller;
+    text-align:start;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.SongInfo img{
+    
+    border-radius: 35px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+}
+.SongIteamContainer{
+
+    margin-top: 34px;
+}
+/* 
+.about {
+   
+    font-size: 1.2em;
+    text-decoration: aliceblue;
+    
+} */

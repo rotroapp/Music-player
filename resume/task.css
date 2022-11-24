@@ -1,0 +1,24 @@
+img{
+    height: 600px;
+    width: 500px;
+}
+
+body{
+   background-color: #e0ffff;
+}
+
+hr{
+    align-content: center;
+    border-width: 7px;
+    border-color: rgb(140, 153, 151);
+    border-style: none;
+    border-top-style: dotted;
+    width: 20%;
+}
+.title{
+    color: rgb(12, 83, 21);
+}
+#demo{
+    text-align: center; 
+    color: rgb(10, 10, 10);
+}
